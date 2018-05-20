@@ -11,7 +11,7 @@ attr_accessor :anagram
       sorted = @anagram.split(//).sort.join
       array.each_with_index do |i, index| 
         i[index].split(//).sort.join
-        return i if i == sorted
+        return i[index] if i[index] == sorted
       end
     end
 end
