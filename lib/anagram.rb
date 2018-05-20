@@ -9,9 +9,9 @@ attr_accessor :anagram
     
     def match(array)
       sorted = @anagram.split(//).sort.join
-      array.each_with_index do |i, index| 
-        i[index].split(//).sort.join
-        return i[index] if i[index] == sorted
-      end
+      #array.each_with_index do |i, index| 
+        #i[index].split(//).sort.join
+       # return i[index] if i[index] == sorted
+      #end
     end
 end
