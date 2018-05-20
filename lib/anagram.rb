@@ -13,6 +13,6 @@ attr_accessor :anagram
       array.each_with_index do |i, index| 
         list << i[index].split(//).sort.join
       end
-      list.detect {|x| x == sorted}
+      list.map! {|x| x == sorted}
     end
 end
