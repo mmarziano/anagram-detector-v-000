@@ -11,7 +11,6 @@ attr_accessor :anagram
       list = []
       sorted = @anagram.split(//).sort.join
       array.each.select {|z| list << z if z.split(//).sort.join == sorted}
-      #list.select {|x| x == sorted}
       
     end
 end
