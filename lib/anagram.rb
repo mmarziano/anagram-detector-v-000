@@ -12,6 +12,6 @@ attr_accessor :anagram
       sorted = @anagram.split(//).sort.join
       array.collect {|i| i.split(//).flatten.sort.join}
       
-      #list.select {|x| x == sorted}
+      array.select {|x| x == sorted}
     end
 end
