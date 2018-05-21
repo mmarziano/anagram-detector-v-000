@@ -10,7 +10,7 @@ attr_accessor :anagram
     def match(array)
       list = []
       sorted = @anagram.split(//).sort.join
-      array.collect {|i| list << i.split(//).flatten.sort.join}
+      array.collect {|i| list << i.split(//).sort.join}
       list.select {|x| x == sorted}
     end
 end
